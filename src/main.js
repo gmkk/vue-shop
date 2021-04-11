@@ -13,6 +13,11 @@ Vue.use(Element)
 // 导入全局样式表
 import './assets/css/global.css'
 
+//tree-table
+import treeTable from 'vue-table-with-tree-grid'
+ 
+Vue.component('tree-table', treeTable )
+
 //配置请求的根路径
 import axios from 'axios'
 axios.defaults.baseURL = "http://127.0.0.1:8080/api/private/v1/"
