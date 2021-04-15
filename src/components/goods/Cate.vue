@@ -1,8 +1,12 @@
 <template>
   <div>
     <!-- 面包屑导航 -->
-    <crumb v-bind:data="crumbData"></crumb>
-
+   <el-breadcrumb>
+        <el-breadcrumb-item :to="{ path: '/welcome' }">首页</el-breadcrumb-item>
+        <el-breadcrumb-item>商品管理</el-breadcrumb-item>
+        <el-breadcrumb-item>商品分类</el-breadcrumb-item>
+    </el-breadcrumb>
+   
     <!-- 卡片视图 -->
     <el-card class="box-card">
       <!-- 添加按钮 -->
